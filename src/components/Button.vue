@@ -1,0 +1,18 @@
+<template>
+    <button @click="onClick()" :style="{ background: color }" class="btn">+ Create new</button>
+</template>
+
+<script>
+export default {
+    name: 'Button',
+    props: {
+        text: String,
+        color: String,
+    },
+    // methods: {
+    //     onClick() {
+    //         this.('btn-click')
+    //     }
+    // }
+}
+</script>
