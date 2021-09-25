@@ -7,6 +7,7 @@
       <div class="container">
         <Header />
       </div>
+
     </div>
   </div>
 
@@ -37,8 +38,41 @@ export default {
 body {
   font-family: 'Poppins', sans-serif;
 }
+#app {
+  position: relative;
+  width: calc(100% - 20px);
+  height: calc(100vh - 20px);
+  padding: 10px;
+  color: #333;
+  overflow: hidden;
+}
+.top-bar {
+  display: flex;
+  width: 100%;
+}
+#navigation-icon {
+  padding: 10px 10px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+i {
+    font-size: 2rem;
+  }
+
+.content {
+  position: absolute;
+  top: 10px;
+  width: calc(100% - 60px);
+  height: calc(100vh - 60px);
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 30px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  transition: 1s transform cubic-bezier(0,.12,.14,1);
+}
+
 .container {
-  max-width: auto;
+  max-width: 80%;
   margin: 30px auto;
   overflow: auto;
   min-height: 300px;
@@ -60,4 +94,5 @@ body {
   font-size: 15px;
   font-family: inherit;
 }
+
 </style>

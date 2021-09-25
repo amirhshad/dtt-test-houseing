@@ -1,7 +1,7 @@
 <template>
     <header>
         <h1>Houses</h1>
-        <Button text="This is"/>
+        <Button text="+ Create New" color="red"/>
     </header>
 
 </template>
